@@ -7,3 +7,4 @@ git commit -m "added testing files"
 restore testing.py
  git status
  git restore testing.py
+git remote -v
