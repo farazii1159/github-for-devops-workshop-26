@@ -8,3 +8,104 @@ restore testing.py
  git status
  git restore testing.py
 git remote -v
+
+--------------------------------------------
+
+
+1. Basic Commands (Getting Started)
+
+git init                # Initialize a new repository
+git clone <repo_url>   # Clone an existing repo
+git status             # Check status of files
+git add <file>         # Add specific file
+git add .              # Add all files
+git commit -m "msg"    # Commit changes
+git log                # View commit history
+
+
+🔹 2. Branching & Switching
+
+git branch                     # List branches
+git branch <branch_name>       # Create new branch
+git checkout <branch_name>     # Switch branch
+git checkout -b <branch_name>  # Create & switch
+git switch <branch_name>       # Modern switch
+git switch -c <branch_name>    # Create & switch (modern)
+git branch -d <branch_name>    # Delete branch
+
+
+
+🔹 3. Remote Repositories (GitHub)
+
+git remote add origin <url>    # Add remote
+git remote -v                 # Show remotes
+git push -u origin main       # Push first time
+git push                     # Push changes
+git pull                     # Pull changes
+git fetch                    # Fetch updates
+
+
+🔹 4. Undo Changes
+
+
+git restore <file>           # Undo file changes
+git restore --staged <file>  # Unstage file
+git reset <file>             # Unstage (old way)
+git reset --hard             # Reset everything (⚠️ dangerous)
+git revert <commit_id>       # Undo commit safely
+
+
+🔹 5. Stashing (Temporary Save)
+
+
+git stash            # Save changes temporarily
+git stash list       # View stashes
+git stash apply      # Apply stash
+git stash drop       # Delete stash
+
+
+🔹 6. Merging & Rebasing
+
+git merge <branch>         # Merge branch
+git rebase <branch>        # Rebase branch
+git rebase -i HEAD~3       # Interactive rebase
+
+
+🔹 7. Logs & History (Advanced Viewing)
+
+git log --oneline
+git log --graph --all
+git show <commit_id>
+git diff
+git diff <file>
+
+
+🔹 8. Tags
+
+git tag                    # List tags
+git tag <tag_name>         # Create tag
+git push origin <tag_name> # Push tag
+
+
+🔹 9. Configuration
+
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"
+git config --list
+
+🔹 10. Advanced Commands
+
+git cherry-pick <commit>   # Apply specific commit
+git blame <file>           # Show who changed lines
+git reflog                 # Track all actions
+git clean -fd              # Remove untracked files
+git bisect                 # Find bug-causing commit
+🔹 11. Git Ignore
+touch .gitignore
+
+Example:
+
+node_modules/
+*.log
+.env
+.terraform/
