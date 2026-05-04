@@ -6,7 +6,7 @@ This repository contains my personal notes and practice while learning DevOps, G
 
 ---
 
-## 🔧 Tools & Technologies
+## 🔧 Tools
 
 * Git & GitHub
 * Linux (RHEL / CentOS)
