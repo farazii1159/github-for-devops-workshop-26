@@ -1,8 +1,12 @@
+"""
+Simple demo module for greeting function used in DevOps learning.
+"""
+
 def hello():
     """
-    this is demo
+    Returns a greeting message.
     """
+    return "Hello, my name is Faraz. I am learning DevOps."
 
-    return "hello, my Name is faraz . I am learning Devops"
 
-hello()
+print(hello())
